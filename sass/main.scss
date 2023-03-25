@@ -1,0 +1,19 @@
+/* custom vriable  */
+$secondary: rgb(181, 180, 180);
+
+// import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors:(
+    "altlight":#f2ebfa,
+    "altdark":#522192
+
+);
+
+// merge the maps to add new theme colors
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+/*  import bootstrap */
+@import '../node_modules/bootstrap/scss/bootstrap';/*  ds vedere se ci vuole .scss file finale 
+ */
